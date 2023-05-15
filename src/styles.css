@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("./assets/fonts/Merriweather-Black.ttf");
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #191919;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #D9D9D9;
+}
+
+body {
+  background-color: #191411;
+  font-family: "Gilroy", sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  background: linear-gradient(95.61deg, #da8023 0%, #e2b438 100%);
+  border: 0;
+  border-radius: 8px;
+  width: 260px;
+  height: 62px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  color: #191411;
+}
+
+.button:hover {
+  background: linear-gradient(95.61deg, #ac6115 0%, #9e7a19 100%);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  color: gray;
+  background: #343434;
+}
+
+.common-title {
+  font-family: "Merriweather", sans-serif;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 360px) {
+  .common-title {
+    font-size: 40px;
+  }
+}
